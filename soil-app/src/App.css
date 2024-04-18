@@ -1,0 +1,409 @@
+/* 
+Color Pallete
+Primary: #588157
+Secondary: #a3b18a
+Tertiary: #dad7cd
+Text: #3a5a40
+*/
+
+/* Tag Styles */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #dad7cd;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 80px;
+  background-color: #588157;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+h1 {
+  color: #344e41;
+}
+
+/* Nav */
+
+nav h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  padding-top: 20px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  cursor: pointer;
+}
+
+nav li {
+  margin: 0 10px;
+  color: #fff;
+  padding: 20px;
+  font-size: 18px;
+}
+
+nav li:hover {
+  color: #3a5a40;
+  background-color: #dad7cd;
+  border-radius: 10px;
+}
+
+/* Form */
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+form input {
+  padding: 10px;
+  border: 1px solid #dad7cd;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #588157;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+/* View */
+
+.signup-view,
+.signin-view {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+}
+
+/* HomePage */
+
+.home-title {
+  text-align: center;
+}
+
+.home-specialsTitle {
+  text-align: center;
+  margin: 0px;
+}
+
+.home-growYourGarden {
+  text-align: center;
+}
+
+/* Selector Styles */
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 40px 10px 40px;
+  background-color: #588157;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+}
+
+.view-wrapper {
+  margin: auto;
+  min-height: 75vh;
+  max-height: 75vh;
+  overflow-y: auto;
+  background-color: #fff;
+  width: 70%;
+  border-radius: 10px;
+  padding: 20px 50px;
+  margin-top: 20px;
+  border: #344e41 1px solid;
+}
+
+.page-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.detail-tile {
+  background-color: #a3b18a;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.detail-tile h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 15px 0 0 0;
+  border-bottom: 1px solid white;
+  margin-right: 20px;
+}
+
+.detail-tile p {
+  color: black;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #dad7cd;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.detail-tile button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #588157;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.delete-button {
+  float: right;
+  margin-top: 20vh;
+  width: 140px;
+  background-color: #588157;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: #3a5a40;
+}
+
+.confirmation {
+  margin-left: 25vw;
+  margin-top: 20vh;
+  display: flex;
+}
+
+.form-container input {
+  width: 90%;
+  box-sizing: border-box;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #dad7cd;
+  border-radius: 5px;
+  margin: 10px 0;
+  width: 90%;
+  cursor: pointer;
+}
+
+.radio-button {
+  border: 1px solid #588157;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.radio-button:hover {
+  background-color: #3a5a40;
+  color: #fff;
+}
+
+.checked {
+  background-color: #588157;
+  color: #fff;
+}
+
+.submit {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #588157;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.submit:hover {
+  background-color: #3a5a40;
+}
+
+.error {
+  color: red;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.label-for {
+  padding-top: 20px;
+}
+
+.data-value {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.dark-hover:hover {
+  background-color: #3a5a40 !important;
+  color: #fff;
+}
+
+.option-button:hover {
+  background-color: #a3b18a !important;
+}
+
+/* CAROUSEL TEST CSS */
+/* Grid setup for specials */
+.special-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-gap: 100px;
+}
+
+/* Each grid item's styling */
+.special-grid-item {
+  width: 100%;
+  padding-bottom: 100%; /* This will make the div square */
+  position: relative;
+}
+
+.special-grid-item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Specials Hover */
+
+.specials-rounded {
+  transition: 0.3s;
+}
+.specials-rounded:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Specials Hover Prices Effect */
+.specials-item {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.specials-item:hover {
+  transform: scale(1.05);
+}
+
+.specials-item:hover .specials-overlay {
+  display: block;
+}
+
+.specials-overlay {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 100%;
+  transition: 0.5s ease;
+  padding: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  font-weight: bold;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.specials-add-to-cart {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.specials-add-to-cart:hover {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(13, 202, 13);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/*SHOPPING CART*/
+
+.shopping-cart-summary {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: white; /* Update this to match your navbar's color scheme */
+  background: #333; /* This is an example; set it to match your design */
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 20px; /* Adjust as necessary for your layout */
+}
+
+.shopping-cart-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 14px;
+}
+
+.quantity-input {
+  width: 50px;
+  text-align: center;
+}
+
+.cart-view table {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  /* Add more styling for spacing and layout */
+}
+
+.cart-view th,
+.cart-view td {
+  padding: 10px;
+  text-align: left;
+}
