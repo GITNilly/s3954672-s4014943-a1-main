@@ -16,8 +16,17 @@ const CheckoutView = ({ cartItems }) => {
   const [termsAgreed, setTermsAgreed] = useState(false);
   const [errors, setErrors] = useState({});
 
+  const itemImageMap = {
+    "Salad Mix": "image1.jpg",
+    "Carrots": "image2.jpg",
+    "Lettuce": "image3.jpg",
+    "Beets": "image4.jpg",
+    "Tomatoes": "image5.jpg",
+    "Bell Peppers": "image6.jpg",
+  };
+
   const getImagePath = (itemName) => {
-    const imageName = itemName.toLowerCase().replace(/\s/g, "_") + ".jpg";
+    const imageName = itemImageMap[itemName] || "default_image.jpg";
     return `/carouselImages/${imageName}`;
   };
 
