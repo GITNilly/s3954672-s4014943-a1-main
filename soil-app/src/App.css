@@ -374,11 +374,10 @@ select {
   display: flex;
   align-items: center;
   font-size: 14px;
-  color: white; /* Update this to match your navbar's color scheme */
-  background: #333; /* This is an example; set it to match your design */
+  color: white;
   padding: 5px 10px;
-  border-radius: 5px;
-  margin-right: 20px; /* Adjust as necessary for your layout */
+  margin-right: 20px;
+  background-color: 4;
 }
 
 .shopping-cart-button {
@@ -388,6 +387,9 @@ select {
   cursor: pointer;
   margin-left: 10px;
   font-size: 14px;
+}
+
+.shopping-cart-button:hover {
 }
 
 .quantity-input {
@@ -406,4 +408,43 @@ select {
 .cart-view td {
   padding: 10px;
   text-align: left;
+}
+
+.cart-buttons {
+  align-items: center;
+  margin-right: 15px;
+  color: white;
+  background-color: #588157;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 10px;
+  font-weight: bold;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.cart-buttons:hover {
+  cursor: pointer;
+  background-color: #88ca87;
+  transition: 0.3s;
+}
+
+/* Grow your garden css */
+
+.home-growYourGardenInfo {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.cart-text {
+  font-size: 16px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.cart-item {
+  font-size: 20px;
+  transform: translateY(-5px);
 }

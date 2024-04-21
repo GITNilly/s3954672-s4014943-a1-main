@@ -73,10 +73,12 @@ const CartView = ({
       <div className="cart-total">
         <strong className="cart-TotalPrice">Total: ${calculateTotal()}</strong>
       </div>
-      <button className="cart-ClearCart" onClick={clearCart}>
+      <button className="cart-buttons" onClick={clearCart}>
         Clear Cart
       </button>
-      <button onClick={handleCheckout}>Checkout</button>
+      <button className="cart-buttons" onClick={handleCheckout}>
+        Checkout
+      </button>
     </div>
   );
 };

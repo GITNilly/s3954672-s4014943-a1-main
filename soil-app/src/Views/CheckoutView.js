@@ -18,7 +18,7 @@ const CheckoutView = ({ cartItems }) => {
 
   const itemImageMap = {
     "Salad Mix": "image1.jpg",
-    "Carrots": "image2.jpg",
+    "Carrots": "image2.png",
     "Lettuce": "image3.jpg",
     "Beets": "image4.jpg",
     "Tomatoes": "image5.jpg",
@@ -84,24 +84,32 @@ const CheckoutView = ({ cartItems }) => {
             <img
               src={getImagePath(item.name)}
               alt={item.name}
-              style={{ width: "50px", height: "50px" }}
+              style={{
+                width: "50px",
+                height: "50px",
+                marginRight: 10,
+                borderRadius: 5,
+                marginTop: 15,
+              }}
             />
             <span>
               {item.quantity} x {item.name}
             </span>
-            <span>${item.price}</span>
+            <span> ${item.price}</span>
           </div>
         ))}
       </div>
       <div className="cart-totals">
-        <div>Subtotal: ${calculateSubtotal().toFixed(2)}</div>
-        <div>
+        <div className="cart-text">
+          Subtotal: ${calculateSubtotal().toFixed(2)}
+        </div>
+        <div className="cart-text">
           Shipping: $
           {shippingMethod === "standard"
             ? shippingCosts.standard.toFixed(2)
             : shippingCosts.express.toFixed(2)}
         </div>
-        <div>Total: ${calculateTotal().toFixed(2)}</div>
+        <div className="cart-text">Total: ${calculateTotal().toFixed(2)}</div>
       </div>
       <form onSubmit={handlePlaceOrder}>
         <h3>Your Invoice Details</h3>
